@@ -17,8 +17,8 @@ else:
     st.warning("you need to upload a csv file")
 
 if st.button('Détection'):
-    try:
+    #try:
         result = predict(X)
         st.write(result.sample(10))
-    except:
-        st.error("Erreur lors de la prédiction")
+    #except:
+        #st.error("Erreur lors de la prédiction")

@@ -13,7 +13,7 @@ if uploaded_file is not None:
     try:
         df = pd.read_csv(uploaded_file, sep=';')
         X = df[['length', 'margin_low', 'margin_up']].copy()
-        st.write(X.sample(10))
+        st.write(X.sample(10, random_state=0))
     except:
         st.error("Vérifier le format du fichier !")
 else:
@@ -22,6 +22,6 @@ else:
 if st.button('Détection'):
     #try:
         result = predict(X)
-        st.write(result.sample(10))
+        st.write(result.sample(10, random_state=0))
     #except:
         #st.error("Erreur lors de la prédiction")

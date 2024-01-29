@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-import sklearn
+from sklearn.dummy import DummyClassifier
 import numpy as np
 from fake_bill_prediction import predict
 

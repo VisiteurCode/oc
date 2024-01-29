@@ -1,7 +1,6 @@
 import joblib
 import pandas as pd
-from sklearn.dummy import DummyClassifier
-import numpy as np
+import sklearn
 
 def predict(data):
     lr_pipeline = joblib.load('./logreg_pipeline.joblib')

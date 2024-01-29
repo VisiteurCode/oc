@@ -1,7 +1,5 @@
 import streamlit as st
 import pandas as pd
-from sklearn.dummy import DummyClassifier
-import numpy as np
 from fake_bill_prediction import predict
 
 st.title('Détection des faux billets')

@@ -21,7 +21,7 @@ else:
 
 if st.button('Détection'):
     try:
-        result = predict(X)
+        result = predict(X, df)
         st.write(result.sample(5, random_state=0))
     except:
         st.error("Erreur lors de la prédiction")

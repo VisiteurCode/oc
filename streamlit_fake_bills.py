@@ -13,7 +13,7 @@ if uploaded_file is not None:
     try:
         df = pd.read_csv(uploaded_file, sep=';')
         X = df[['length', 'margin_low', 'margin_up']].copy()
-        st.write(X.sample(5, random_state=0))
+        st.write(df.sample(5, random_state=0))
     except:
         st.error("Vérifier le format du fichier !")
 else:

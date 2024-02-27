@@ -15,9 +15,9 @@ if uploaded_file is not None:
         X = df[['length', 'margin_low', 'margin_up']].copy()
         st.write(df)
     except:
-        st.error("Vérifier le format du fichier !")
+        st.error("Vérifiez le format du fichier !")
 else:
-    st.warning("you need to upload a csv file")
+    st.warning("Aucun fichier csv...")
 
 if st.button('Détection'):
     try:
